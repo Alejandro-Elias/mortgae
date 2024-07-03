@@ -32,47 +32,55 @@
 
 <body>
   <main>
-  <h1 class="title">Mortgage Calculator</h1>
-  <div class="clear"><a href="#">Clear All</a></div>
 
+    <div class="header">
+      <h1 class="title">Mortgage Calculator</h1>
+      <div class="clear"><a href="#">Clear All</a></div>
+    </div>
 
-  <form action="">
-    <section>
-      <label for="">Mortgage Amount</label>
-      <div class="input-group">
-        <p class="item-group item-uno">£</p>
-        <input class="item-group item-dos" type="number">
+    <form action="">
+      <section>
+        <label for="">Mortgage Amount</label>
+        <div class="input-group">
+          <p class="item-group item-uno">£</p>
+          <input class="item-group item-dos" type="number">
+        </div>
+      </section>
+
+      <div class="input-medios">
+
+        <section>
+          <label for="">Mortgage Term</label>
+          <div class="input-group group-1">
+            <p class="item-group item-uno item-left item-left-1">years</p>
+            <input class="item-group item-dos" type="number">
+          </div>
+        </section>
+
+        <section>
+          <label for="">Interest Rate</label>
+          <div class="input-group group-2">
+            <p class="item-group item-uno item-left item-left-2">%</p>
+            <input class="item-group item-dos" type="number">
+          </div>
+        </section>
+
       </div>
-    </section>
 
-    <section>
-      <label for="">Mortgage Term</label>
-      <div class="input-group">
-        <p class="item-group item-uno item-left">years</p>
-        <input class="item-group item-dos" type="number">
-      </div>
-    </section>
-    <section>
-      <label for="">Interest Rate</label>
-      <div class="input-group">
-        <p class="item-group item-uno item-left">%</p>
-        <input class="item-group item-dos" type="number">
-      </div>
-    </section>
 
-    <section>
-      <p>Mortgage Type</p>
-      <div class="radio-group">
-        <label for=""><input type="radio">Repayment</label>
-      </div>
-      <div class="radio-group">
-        <label for=""><input type="radio">Interest Only</label>
-      </div>
-    </section>
+      <section>
+        <p>Mortgage Type</p>
+        <div class="radio-group">
+          <label for=""><input type="radio">Repayment</label>
+        </div>
+        <div class="radio-group">
+          <label for=""><input type="radio">Interest Only</label>
+        </div>
+      </section>
 
-    <button class="submit"><img src="assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
+      <button class="submit"><img src="assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
 
-  </form>
+    </form>
 
   </main>
 
