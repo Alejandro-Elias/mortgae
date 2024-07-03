@@ -58,6 +58,7 @@ a {
     font-weight: 800;
     border-radius: 5px 0 0 5px;
     margin-top: 10px;
+    box-sizing: border-box;
 }
 
 .item-dos {
@@ -123,7 +124,9 @@ section {
 }
 
 footer {
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--slate900);
@@ -203,3 +206,39 @@ footer {
     }
 }
 
+@media (min-width: 1024px) {
+
+    body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+    }
+
+    main {
+        width: 50%;
+        height: 620px;
+        margin: 0;
+        margin-right: -50px;
+        padding-right: 90px;
+        border-radius: 30px;
+    }
+
+    footer {
+        width: 50%;
+        height: 620px;
+        margin: 0;
+        border-radius: 0 30px 30px 90px;
+    }
+
+    .item-left-1 {
+        position: absolute;
+        right: calc(70% + 11px);
+    }
+
+    .item-left-2 {
+        right:  calc(50% + 66px);
+}
+
+}
