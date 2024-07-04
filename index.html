@@ -41,12 +41,13 @@
       <div class="clear"><a href="#">Clear All</a></div>
     </div>
 
-    <form action="">
+    <form action="#" method="POST" id="form">
       <section>
         <label for="">Mortgage Amount</label>
         <div class="input-group">
-          <p class="item-group item-uno">£</p>
-          <input class="item-group item-dos" type="number">
+          <p id="input-uno" class="item-group item-uno">£</p>
+          <input id="monto" class="item-group item-dos" type="number">
+          <div class="small"><small id="small-monto"></small></div>          
         </div>
       </section>
 
@@ -55,16 +56,18 @@
         <section>
           <label for="">Mortgage Term</label>
           <div class="input-group group-1">
-            <p class="item-group item-uno item-left item-left-1">years</p>
-            <input class="item-group item-dos" type="number">
+            <p id="input-dos" class="item-group item-uno item-left item-left-1">years</p>
+            <input id="plazo" class="item-group item-dos input-left" type="number">
+            <div class="small"><small id="small-plazo"></small></div>   
           </div>
         </section>
 
         <section>
           <label for="">Interest Rate</label>
           <div class="input-group group-2">
-            <p class="item-group item-uno item-left item-left-2">%</p>
-            <input class="item-group item-dos" type="number">
+            <p id="input-tres" class="item-group item-uno item-left item-left-2">%</p>
+            <input id="tasa" class="item-group item-dos input-left" type="number">
+            <div class="small"><small id="small-tasa"></small></div>   
           </div>
         </section>
 
@@ -81,7 +84,7 @@
         </div>
       </section>
 
-      <button class="submit"><img src="assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
+      <button type="submit" id="submit" class="submit"><img src="assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
 
     </form>
 
@@ -112,6 +115,7 @@
   </div>
   </footer>
 
+  <script src="./script.js"></script>
 </body>
 
 </html>
