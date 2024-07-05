@@ -66,7 +66,7 @@
           <label for="">Interest Rate</label>
           <div class="input-group group-2">
             <p id="input-tres" class="item-group item-uno item-left item-left-2">%</p>
-            <input id="tasa" class="item-group item-dos input-left" type="number">
+            <input id="tasa" class="item-group item-dos input-left" type="number" step="any">
             <div class="small"><small id="small-tasa"></small></div>   
           </div>
         </section>
@@ -76,12 +76,13 @@
 
       <section>
         <p>Mortgage Type</p>
-        <div class="radio-group">
-          <label for=""><input type="radio">Repayment</label>
+        <div id="radio-uno" class="radio-group">
+          <label for="radio-uno"><input id="repayment-radio" type="radio" value="true" >Repayment</label>
         </div>
-        <div class="radio-group">
-          <label for=""><input type="radio">Interest Only</label>
+        <div id="radio-dos" class="radio-group">
+          <label for="radio-dos"><input id="interest-radio" type="radio" value="true">Interest Only</label>
         </div>
+      <div class="small"><small id="small-radio"></small></div>
       </section>
 
       <button type="submit" id="submit" class="submit"><img src="assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
@@ -97,15 +98,16 @@
       <p>Complete the form and click “calculate repayments” to see what
         your monthly repayments would be. </p>
     </div>
-    <div style="display: none;">
-      <h1>Your results</h1>
+    <div class="footer-full">
+      <h2>Your results</h2>
       <p>Your results are shown below based on the information you provided.
         To adjust the results, edit the form and click “calculate repayments” again.</p>
-      <div class="">
+      <div class="calculo">
         <p>Your monthly repayments</p>
-        <p></p>
+        <p id="resultado" class="resultado"></p>
+        <hr>
         <p>Total you'll repay over the term</p>
-        <p></p>
+        <p id="total" class="total"></p>
       </div>
     </div>
 
