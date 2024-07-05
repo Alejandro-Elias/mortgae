@@ -74,6 +74,11 @@ main {
 
 a {
     color: var(--slate700);
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 .clear {
@@ -91,13 +96,18 @@ a {
     color: var(--red);
 }
 
-/* #small-monto {
-} */
-
 .item-group {
     position: relative;
     height: 50px;
     padding-top: 10px;
+}
+
+.item-group:focus {
+    outline: none;
+}
+
+.item-group:hover {
+    cursor: pointer;
 }
 
 .item-uno {
