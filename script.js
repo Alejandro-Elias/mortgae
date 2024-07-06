@@ -120,9 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (repayment.checked) {
             get("#resultado").innerText = "£" + formatNumber(pagoMensual);
             get("#total").innerText = "£" + formatNumber(totalPagado);
+            get("#titulo-resultado").innerText = "Your monthly repayments";
         } else if (interest.checked) {
             get("#resultado").innerText = "£" + formatNumber(interesesTotales);
-            get("#total").innerText = "£" + formatNumber(totalPagado);
+            get("#total").innerText = "£" + formatNumber(totalPagado);            
+            get("#titulo-resultado").innerText = "total interest payable";
         }
 
         
