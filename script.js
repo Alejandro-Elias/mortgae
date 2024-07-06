@@ -8,33 +8,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const interest = get("#interest-radio");
 
     get("#monto").addEventListener("mouseover", () => {
-        get("#monto").style.border = "1px solid hsl(61, 70%, 52%)";
-        get("#input-uno").style.backgroundColor = "hsl(61, 70%, 52%)";
+        get("#monto").classList.add("input-lime");
+        get("#input-uno").classList.add("p-lime");
     })
 
     get("#monto").addEventListener("mouseout", () => {
-        get("#monto").style.border = "1px solid black";
-        get("#input-uno").style.backgroundColor = "hsl(203, 41%, 72%)";
+        get("#monto").classList.remove("input-lime") ;
+        get("#input-uno").classList.remove("p-lime");
     })
 
     get("#plazo").addEventListener("mouseover", () => {
-        get("#plazo").style.border = "1px solid hsl(61, 70%, 52%)";
-        get("#input-dos").style.backgroundColor = "hsl(61, 70%, 52%)";
+        get("#plazo").classList.add("input-lime");
+        get("#input-dos").classList.add("p-lime");
     })
 
     get("#plazo").addEventListener("mouseout", () => {
-        get("#plazo").style.border = "1px solid black";
-        get("#input-dos").style.backgroundColor = "hsl(203, 41%, 72%)";
+        get("#plazo").classList.remove("input-lime") ;
+        get("#input-dos").classList.remove("p-lime");
     })
 
     get("#tasa").addEventListener("mouseover", () => {
-        get("#tasa").style.border = "1px solid hsl(61, 70%, 52%)";
-        get("#input-tres").style.backgroundColor = "hsl(61, 70%, 52%)";
+        get("#tasa").classList.add("input-lime");
+        get("#input-tres").classList.add("p-lime");
     })
 
     get("#tasa").addEventListener("mouseout", () => {
-        get("#tasa").style.border = "1px solid black";
-        get("#input-tres").style.backgroundColor = "hsl(203, 41%, 72%)";
+        get("#tasa").classList.remove("input-lime") ;
+        get("#input-tres").classList.remove("p-lime");
     })
         
 
@@ -125,13 +125,11 @@ document.addEventListener('DOMContentLoaded', () => {
             get("#resultado").innerText = "£" + formatNumber(interesesTotales);
             get("#total").innerText = "£" + formatNumber(totalPagado);            
             get("#titulo-resultado").innerText = "total interest payable";
-        }
-
-        
+        }        
 
     });
-})
-get("#clear").addEventListener("click", () => {
+
+    get("#clear").addEventListener("click", () => {
             get(".footer-empty").style.display = "flex";
             get("footer").style.backgroundColor = "hsl(202, 55%, 16%)";
             get(".footer-full").style.display = "none";
@@ -148,4 +146,6 @@ get("#clear").addEventListener("click", () => {
                 input.value = '';
             });
         })
+})
+
 
